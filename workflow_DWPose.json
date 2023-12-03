@@ -210,51 +210,6 @@
       ]
     },
     {
-      "id": 13,
-      "type": "DWPreprocessor",
-      "pos": [
-        700,
-        120
-      ],
-      "size": {
-        "0": 315,
-        "1": 178
-      },
-      "flags": {},
-      "order": 6,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "image",
-          "type": "IMAGE",
-          "link": 17
-        }
-      ],
-      "outputs": [
-        {
-          "name": "IMAGE",
-          "type": "IMAGE",
-          "links": [
-            14,
-            15
-          ],
-          "shape": 3,
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "DWPreprocessor"
-      },
-      "widgets_values": [
-        "enable",
-        "enable",
-        "enable",
-        512,
-        "yolox_l.torchscript.pt",
-        "dw-ll_ucoco_384_bs5.torchscript.pt"
-      ]
-    },
-    {
       "id": 9,
       "type": "PrimitiveNode",
       "pos": [
@@ -377,6 +332,51 @@
       }
     },
     {
+      "id": 13,
+      "type": "DWPreprocessor",
+      "pos": [
+        700,
+        120
+      ],
+      "size": {
+        "0": 315,
+        "1": 178
+      },
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 17
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            14,
+            15
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "DWPreprocessor"
+      },
+      "widgets_values": [
+        "enable",
+        "enable",
+        "enable",
+        512,
+        "yolox_l.torchscript.pt",
+        "dw-ll_ucoco_384_bs5.torchscript.pt"
+      ]
+    },
+    {
       "id": 4,
       "type": "VHS_LoadVideoPath",
       "pos": [
@@ -411,7 +411,7 @@
         "Node name for S&R": "VHS_LoadVideoPath"
       },
       "widgets_values": {
-        "video": "\"E:\\AI生成イラスト\\00構図サンプル\\v2v\\唱🎪　#ゾンビデダンス #usjハロウィン #Ado #usj #show #ｕｓｊ唱ダンスチャレンジ [0gIi5YnrEdk].webm\"",
+        "video": "nnnn.mp4",
         "force_rate": 24,
         "force_size": "Disabled",
         "frame_load_cap": 0,
