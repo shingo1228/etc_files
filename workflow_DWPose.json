@@ -1,0 +1,514 @@
+{
+  "last_node_id": 14,
+  "last_link_id": 17,
+  "nodes": [
+    {
+      "id": 10,
+      "type": "PrimitiveNode",
+      "pos": [
+        333.4463002859067,
+        562.9418995754786
+      ],
+      "size": {
+        "0": 210,
+        "1": 58
+      },
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            7
+          ],
+          "widget": {
+            "name": "text_b"
+          }
+        }
+      ],
+      "properties": {},
+      "widgets_values": [
+        "input\\img"
+      ]
+    },
+    {
+      "id": 11,
+      "type": "PrimitiveNode",
+      "pos": [
+        333.4463002859067,
+        662.9418995754786
+      ],
+      "size": {
+        "0": 210,
+        "1": 58
+      },
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            8
+          ],
+          "widget": {
+            "name": "text_b"
+          }
+        }
+      ],
+      "properties": {},
+      "widgets_values": [
+        "output"
+      ]
+    },
+    {
+      "id": 7,
+      "type": "Text Concatenate",
+      "pos": [
+        633.4463002859068,
+        442.9418995754785
+      ],
+      "size": {
+        "0": 315,
+        "1": 178
+      },
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text_a",
+          "type": "STRING",
+          "link": 6,
+          "widget": {
+            "name": "text_a"
+          },
+          "slot_index": 0
+        },
+        {
+          "name": "text_b",
+          "type": "STRING",
+          "link": 7,
+          "widget": {
+            "name": "text_b"
+          },
+          "slot_index": 1
+        },
+        {
+          "name": "text_c",
+          "type": "STRING",
+          "link": null,
+          "widget": {
+            "name": "text_c"
+          }
+        },
+        {
+          "name": "text_d",
+          "type": "STRING",
+          "link": null,
+          "widget": {
+            "name": "text_d"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            12
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Text Concatenate"
+      },
+      "widgets_values": [
+        "openpose_20231203_2045",
+        "input\\img",
+        "false",
+        "",
+        "",
+        "\\"
+      ]
+    },
+    {
+      "id": 8,
+      "type": "Text Concatenate",
+      "pos": [
+        633.4463002859068,
+        682.9418995754787
+      ],
+      "size": {
+        "0": 315,
+        "1": 178
+      },
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text_a",
+          "type": "STRING",
+          "link": 9,
+          "widget": {
+            "name": "text_a"
+          },
+          "slot_index": 0
+        },
+        {
+          "name": "text_b",
+          "type": "STRING",
+          "link": 8,
+          "widget": {
+            "name": "text_b"
+          },
+          "slot_index": 1
+        },
+        {
+          "name": "text_c",
+          "type": "STRING",
+          "link": null,
+          "widget": {
+            "name": "text_c"
+          }
+        },
+        {
+          "name": "text_d",
+          "type": "STRING",
+          "link": null,
+          "widget": {
+            "name": "text_d"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            10
+          ],
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Text Concatenate"
+      },
+      "widgets_values": [
+        "openpose_20231203_2045",
+        "output",
+        "false",
+        "",
+        "",
+        "\\"
+      ]
+    },
+    {
+      "id": 13,
+      "type": "DWPreprocessor",
+      "pos": [
+        700,
+        120
+      ],
+      "size": {
+        "0": 315,
+        "1": 178
+      },
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 17
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            14,
+            15
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "DWPreprocessor"
+      },
+      "widgets_values": [
+        "enable",
+        "enable",
+        "enable",
+        512,
+        "yolox_l.torchscript.pt",
+        "dw-ll_ucoco_384_bs5.torchscript.pt"
+      ]
+    },
+    {
+      "id": 9,
+      "type": "PrimitiveNode",
+      "pos": [
+        333.4463002859067,
+        442.9418995754785
+      ],
+      "size": {
+        "0": 210,
+        "1": 58
+      },
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            6,
+            9
+          ],
+          "widget": {
+            "name": "text_a"
+          }
+        }
+      ],
+      "properties": {},
+      "widgets_values": [
+        "openpose_20231203_2045"
+      ]
+    },
+    {
+      "id": 12,
+      "type": "SaveImage",
+      "pos": [
+        1120,
+        940
+      ],
+      "size": {
+        "0": 444.71142578125,
+        "1": 298.01849365234375
+      },
+      "flags": {},
+      "order": 8,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 15
+        },
+        {
+          "name": "filename_prefix",
+          "type": "STRING",
+          "link": 12,
+          "widget": {
+            "name": "filename_prefix"
+          }
+        }
+      ],
+      "properties": {},
+      "widgets_values": [
+        "ComfyUI"
+      ]
+    },
+    {
+      "id": 6,
+      "type": "VHS_VideoCombine",
+      "pos": [
+        1105,
+        120
+      ],
+      "size": [
+        315,
+        756.54296875
+      ],
+      "flags": {},
+      "order": 7,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 14
+        },
+        {
+          "name": "filename_prefix",
+          "type": "STRING",
+          "link": 10,
+          "widget": {
+            "name": "filename_prefix"
+          },
+          "slot_index": 1
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "VHS_VideoCombine"
+      },
+      "widgets_values": {
+        "frame_rate": 24,
+        "loop_count": 0,
+        "filename_prefix": "AnimateDiff",
+        "format": "video/h264-mp4",
+        "pingpong": false,
+        "save_image": true,
+        "crf": 20,
+        "save_metadata": true,
+        "audio_file": "",
+        "videopreview": {
+          "hidden": false,
+          "paused": false,
+          "params": {
+            "filename": "output_00001.mp4",
+            "subfolder": "openpose_20231203_2045",
+            "type": "output",
+            "format": "video/h264-mp4"
+          }
+        }
+      }
+    },
+    {
+      "id": 4,
+      "type": "VHS_LoadVideoPath",
+      "pos": [
+        314,
+        120
+      ],
+      "size": {
+        "0": 350.8849792480469,
+        "1": 198
+      },
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            17
+          ],
+          "shape": 3,
+          "slot_index": 0
+        },
+        {
+          "name": "frame_count",
+          "type": "INT",
+          "links": null,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "VHS_LoadVideoPath"
+      },
+      "widgets_values": {
+        "video": "\"E:\\AI生成イラスト\\00構図サンプル\\v2v\\唱🎪　#ゾンビデダンス #usjハロウィン #Ado #usj #show #ｕｓｊ唱ダンスチャレンジ [0gIi5YnrEdk].webm\"",
+        "force_rate": 24,
+        "force_size": "Disabled",
+        "frame_load_cap": 0,
+        "skip_first_frames": 0,
+        "select_every_nth": 1
+      }
+    }
+  ],
+  "links": [
+    [
+      6,
+      9,
+      0,
+      7,
+      0,
+      "STRING"
+    ],
+    [
+      7,
+      10,
+      0,
+      7,
+      1,
+      "STRING"
+    ],
+    [
+      8,
+      11,
+      0,
+      8,
+      1,
+      "STRING"
+    ],
+    [
+      9,
+      9,
+      0,
+      8,
+      0,
+      "STRING"
+    ],
+    [
+      10,
+      8,
+      0,
+      6,
+      1,
+      "STRING"
+    ],
+    [
+      12,
+      7,
+      0,
+      12,
+      1,
+      "STRING"
+    ],
+    [
+      14,
+      13,
+      0,
+      6,
+      0,
+      "IMAGE"
+    ],
+    [
+      15,
+      13,
+      0,
+      12,
+      0,
+      "IMAGE"
+    ],
+    [
+      17,
+      4,
+      0,
+      13,
+      0,
+      "IMAGE"
+    ]
+  ],
+  "groups": [
+    {
+      "title": "Edit Folder Name",
+      "bounding": [
+        306,
+        351,
+        699,
+        532
+      ],
+      "color": "#3f789e",
+      "font_size": 24,
+      "locked": false
+    }
+  ],
+  "config": {},
+  "extra": {},
+  "version": 0.4
+}
