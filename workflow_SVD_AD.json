@@ -1843,7 +1843,7 @@
         "Node name for S&R": "VHS_LoadVideoPath"
       },
       "widgets_values": {
-        "video": "\"E:\\AI生成イラスト\\00構図サンプル\\v2v\\video (720p).mp4\"",
+        "video": "nnnn.mp4",
         "force_rate": 0,
         "force_size": "Disabled",
         "frame_load_cap": 60,
@@ -3287,7 +3287,7 @@
         "Node name for S&R": "VHS_LoadImagesPath"
       },
       "widgets_values": {
-        "directory": "E:\\stable-diffusion-webui_outputs\\ComfyUI_output\\openpose_20231203_2030\\input",
+        "directory": "input",
         "image_load_cap": 0,
         "skip_first_images": 0,
         "select_every_nth": 4
